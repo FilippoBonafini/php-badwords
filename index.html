@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badwors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="box" action="badwords.php" method="POST">
+            <div class="input">
+                <label class="info" for="badword">Parola Bandita:</label>
+                <input class="text-box" type="text" id="badword" name="badword">
+            </div>
+            <div class="input">
+                <label class="info" for="text">Testo:</label>
+                <textarea class="text-box text-area" id="text" required name="text"></textarea>
+            </div>
+            <button class="footer" type="submit">START</button>
+        </form>
+    </div>
+</body>
+
+</html>
