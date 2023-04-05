@@ -1,10 +1,10 @@
 <?php
 
 // VARIABILI CHE PRENDIAMO DA INDEX.HTML 
-$text = strtolower($_POST['text']);
-$badword = strtolower($_POST['badword']);
+$text = $_POST['text'];
+$badword = $_POST['badword'];
 
-$final_text = str_replace($badword, '***', $text);
+$final_text = str_ireplace($badword, '***', $text);
 $length_text = strlen($text);
 ?>
 
